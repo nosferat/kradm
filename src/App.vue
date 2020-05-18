@@ -12,11 +12,13 @@
   import MenuBar from './components/MenuBar.vue'
   import WorkSpace from './components/WorkSpace.vue'
   import StatusBar from './components/StatusBar.vue'
+  import store from './store/index.js'
 
   export default {
+    store,
     components: {
       UserBar, MenuBar, WorkSpace, StatusBar
-    }
+    },
   }
 </script>
 
