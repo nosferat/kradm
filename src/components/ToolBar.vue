@@ -1,6 +1,6 @@
 <template>
   <div class="tool-bar">
-    <ViewOptions :active="true" />
+    <ViewOptions :expand="true" />
     <HotSpots />
     <Thumbnails />
   </div>

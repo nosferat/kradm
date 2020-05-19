@@ -1,11 +1,15 @@
+import Toggle from '../components/custom/Toggle.vue'
+
 export default {
+  components: { Toggle },
+
   props: {
-    active: Boolean
+    expand: Boolean
   },
 
   data: function () {
     return {
-      isActive: this.active
+      expanded: this.expand
     }
   },
 
@@ -13,12 +17,12 @@ export default {
     style() {
       return {
         'accordion': true,
-        'accordion--active': this.isActive,
+        'accordion--expanded': this.expanded,
       }
     },
 
     toggle() {
-      this.isActive = !this.isActive
+      this.expanded = !this.expanded
     },
   }
 }

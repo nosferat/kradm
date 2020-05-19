@@ -2,6 +2,7 @@
   <div :class="style()">
     <div class="accordion-header" @click="toggle()">
       <div>View options</div>
+      <Toggle v-model="expanded" />
     </div>
     <div class="accordion-content">
       <div>...</div>

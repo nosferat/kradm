@@ -9,3 +9,7 @@
 ------
 
 ## 0.1.2 - add tools components
+
+------
+
+## 0.1.3 - add custom checkboxes
