@@ -1,12 +1,20 @@
 <template>
   <div class="tool-bar">
-    Tool Bar
+    <ViewOptions :active="true" />
+    <HotSpots />
+    <Thumbnails />
   </div>
 </template>
 
 <script>
-  export default {
+  import ViewOptions from './tools/ViewOptions.vue'
+  import HotSpots from './tools/HotSpots.vue'
+  import Thumbnails from './tools/Thumbnails.vue'
 
+  export default {
+    components: {
+      ViewOptions, HotSpots, Thumbnails
+    },
   }
 </script>
 
@@ -15,5 +23,6 @@
     position: relative;
     display: flex;
     width: 280px;
+    flex-direction: column;
   }
 </style>

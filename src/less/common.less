@@ -34,3 +34,38 @@ html, body {
     color: #fa0;
   }
 }
+
+.accordion {
+  position: relative;
+
+  &-header {
+    position: relative;
+    display: flex;
+    height: 36px;
+    padding: 0 12px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 130%;
+    color: #ddd;
+    border: 1px solid #333;
+  }
+
+  &-content {
+    position: relative;
+    height: 0;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+  &--active {
+    .accordion-header {
+      background: #333;
+    }
+  
+    .accordion-content {
+      height: auto;
+      padding: 2px 10px;
+      border: 1px solid #333;
+    }
+  }
+}
