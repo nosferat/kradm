@@ -13,3 +13,7 @@
 ------
 
 ## 0.1.3 - add custom checkboxes
+
+------
+
+## 0.1.4 - add dynamic components and bind to tabs

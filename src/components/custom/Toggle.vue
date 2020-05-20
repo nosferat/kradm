@@ -35,6 +35,7 @@
 
       &:checked ~ .checkmark {
         background-image: url(../../img/toggle-on.svg);
+        opacity: 1;
       }
     }
 
@@ -42,6 +43,7 @@
       position: relative;
       width: 26px;
       height: 15px;
+      opacity: 0.5;
       background-size: 100%;
       background-image: url(../../img/toggle-off.svg);
     }

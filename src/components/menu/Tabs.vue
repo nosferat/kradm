@@ -1,7 +1,7 @@
 <template>
   <div class="tabs">
     <div v-for="(tab, i) of tabs.list"
-      :class="style(i)" :key="i" @click="showTab(i)"> {{ tab }}
+      :class="style(i)" :key="i" @click="showTab(i)"> {{ tab.label }}
     </div>
   </div>
 </template>

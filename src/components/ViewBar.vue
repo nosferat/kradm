@@ -1,12 +1,25 @@
 <template>
   <div class="view-bar">
-    View Bar
+    <component v-bind:is="tabs.active"></component>
   </div>
 </template>
 
 <script>
-  export default {
+  import ImportTour from './view/ImportTour.vue'
+  import PanoContent from './view/PanoContent.vue'
+  import SceneEditor from './view/SceneEditor.vue'
+  import XmlEditor from './view/XmlEditor.vue'
 
+  export default {
+    components: {
+      ImportTour, PanoContent, SceneEditor, XmlEditor
+    },
+
+    computed: {
+      tabs() {
+        return this.$store.state.tabs
+      }
+    },
   }
 </script>
 

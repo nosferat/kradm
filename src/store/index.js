@@ -6,8 +6,13 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     tabs: {
-      active: 0,
-      list: ['Import', 'Pano Content', 'Scenes', 'XML']
+      active: 'ImportTour',
+      list: {
+        'ImportTour': {label: 'Import'},
+        'PanoContent': {label: 'Pano Content'},
+        'SceneEditor': {label: 'Scenes'},
+        'XmlEditor': {label: 'XML'},
+      }
     }
   },
 
