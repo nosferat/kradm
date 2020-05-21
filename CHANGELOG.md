@@ -17,3 +17,7 @@
 ------
 
 ## 0.1.4 - add dynamic components and bind to tabs
+
+------
+
+## 0.1.5 - add router instead of previous dynamic components

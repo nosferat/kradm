@@ -4,21 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-    tabs: {
-      active: 'ImportTour',
-      list: {
-        'ImportTour': {label: 'Import'},
-        'PanoContent': {label: 'Pano Content'},
-        'SceneEditor': {label: 'Scenes'},
-        'XmlEditor': {label: 'XML'},
-      }
-    }
-  },
+  state: {},
 
-  mutations: {
-    showTab: (state, i) => state.tabs.active = i,
-  },
+  mutations: {},
 
   actions: {},
 

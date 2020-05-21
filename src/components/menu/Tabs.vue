@@ -1,29 +1,21 @@
 <template>
   <div class="tabs">
-    <div v-for="(tab, i) of tabs.list"
-      :class="style(i)" :key="i" @click="showTab(i)"> {{ tab.label }}
-    </div>
+    <router-link v-for="tab of tabs" 
+      :key="tab.path" :to="tab.path" class="button" tag="div"> {{ tab.label }}
+    </router-link>
   </div>
 </template>
 
 <script>
   export default {
-    methods: {
-      showTab(i) {
-        this.$store.commit('showTab', i)
-      },
-
-      style(i) {
-        return {
-          'button': true,
-          'button--active': this.tabs.active === i,
-        }
-      },
-    },
-
-    computed: {
-      tabs() {
-        return this.$store.state.tabs
+    data() {
+      return {
+        tabs: [
+          {path: '/import', label: 'Import'},
+          {path: '/pano', label: 'Pano Content'},
+          {path: '/scene', label: 'Scenes'},
+          {path: '/xml', label: 'XML'},
+        ],
       }
     },
   }
